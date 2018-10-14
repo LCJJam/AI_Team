@@ -1,8 +1,12 @@
 # AI_Team
 import os
+
 import struct
+
 import numpy as np
+
 import matplotlib.pyplot as pyplot
+
 def read(dataset = "training", path = "."):
     """
     Python function for importing the MNIST data set.  It returns an iterator
