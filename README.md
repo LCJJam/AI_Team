@@ -8,6 +8,7 @@ import numpy as np
 import matplotlib.pyplot as pyplot
 
 def read(dataset = "training", path = "."):
+
     """
     Python function for importing the MNIST data set.  It returns an iterator
     of 2-tuples with the first element being the label and the second element
@@ -38,7 +39,7 @@ def read(dataset = "training", path = "."):
     for i in range(len(lbl)):
         yield get_img(i)
 
-def show(image):
+#  def show(image):
     """
     Render a given numpy.uint8 2D array of pixel data.
     """
@@ -50,4 +51,4 @@ def show(image):
     imgplot.set_interpolation('nearest')
     ax.xaxis.set_ticks_position('top')
     ax.yaxis.set_ticks_position('left')
-pyplot.show()
+  pyplot.show()
